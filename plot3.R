@@ -11,7 +11,7 @@ plot3 = function(df){
 }
 
 plot3png = function(df){
-        png(file= pngFile)
+        png(file= pngFile,width = 480,height = 480)
         par(mfrow=c(1,1))
         plot3(df)
         dev.off()

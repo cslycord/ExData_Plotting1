@@ -26,7 +26,7 @@ plot4_4 = function(df){
 }
 
 plot4png = function(df){
-        png(file= pngFile)
+        png(file= pngFile,width = 480,height = 480)
         par(mfrow = c(2, 2))
         plot4_1(df)
         plot4_2(df)

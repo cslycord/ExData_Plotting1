@@ -8,7 +8,7 @@ globalActivePowerHist = function(df){
 }
 
 plot1png = function(df){
-        png(file= pngFile)
+        png(file= pngFile,width = 480,height = 480)
         par(mfrow=c(1,1))
         globalActivePowerHist(df)
         dev.off()
